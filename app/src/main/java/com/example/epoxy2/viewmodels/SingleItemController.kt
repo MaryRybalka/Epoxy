@@ -8,8 +8,7 @@ import com.example.epoxy2.models.epoxy.SingleItemModel_
 
 class SingleItemController : EpoxyController(){
 
-    private val items : List<Item> = ItemDataFactory.getItems(10)
-
+    private var items : List<Item> = ItemDataFactory.getItems(0)
     private var index = 0L
 
     override fun buildModels() = items.forEach{
